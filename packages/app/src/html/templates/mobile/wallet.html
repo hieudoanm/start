@@ -1,0 +1,400 @@
+<div
+	class="mx-auto h-screen w-full max-w-lg rounded-lg border border-neutral-200 bg-white shadow dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-100/10">
+	<div class="flex h-full flex-col">
+		<!-- Main content -->
+		<main class="grow space-y-4 overflow-y-auto p-4">
+			<h1 class="text-2xl font-bold">Wallet</h1>
+
+			<!-- Search -->
+			<div class="relative">
+				<input
+					type="text"
+					placeholder="Search..."
+					class="w-full rounded-full border border-neutral-300 py-2 pr-4 pl-10 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-800" />
+				<svg
+					class="absolute top-2.5 left-3 h-5 w-5 text-neutral-400 dark:text-neutral-500"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+				</svg>
+			</div>
+
+			<!-- Action buttons -->
+			<div class="grid grid-cols-4 gap-3">
+				<!-- Transfer -->
+				<button
+					class="flex flex-col items-center rounded-lg p-3 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+					<div
+						class="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+						</svg>
+					</div>
+					<span class="text-xs font-medium">Transfer</span>
+				</button>
+
+				<!-- QR Code Transfer -->
+				<button
+					class="flex flex-col items-center rounded-lg p-3 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+					<div
+						class="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 dark:bg-green-900/50 dark:text-green-400">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+						</svg>
+					</div>
+					<span class="text-xs font-medium">QR Transfer</span>
+				</button>
+
+				<!-- Savings -->
+				<button
+					class="flex flex-col items-center rounded-lg p-3 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+					<div
+						class="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/50 dark:text-purple-400">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3" />
+						</svg>
+					</div>
+					<span class="text-xs font-medium">Savings</span>
+				</button>
+
+				<!-- Coupons -->
+				<button
+					class="flex flex-col items-center rounded-lg p-3 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+					<div
+						class="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
+						</svg>
+					</div>
+					<span class="text-xs font-medium">Coupons</span>
+				</button>
+			</div>
+
+			<!-- Forex -->
+			<h2 class="text-lg font-semibold">Forex</h2>
+			<div
+				class="overflow-hidden rounded-lg border border-neutral-200 p-3 shadow dark:border-neutral-800 dark:shadow-neutral-100/10">
+				<ul class="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+					<li class="flex justify-between">
+						<span>GBP/VND</span><span>30,215</span>
+					</li>
+					<li class="flex justify-between">
+						<span>EUR/VND</span><span>27,912</span>
+					</li>
+					<li class="flex justify-between">
+						<span>USD/VND</span><span>24,150</span>
+					</li>
+					<li class="flex justify-between">
+						<span>CAD/VND</span><span>17,850</span>
+					</li>
+					<li class="flex justify-between">
+						<span>AUD/VND</span><span>15,475</span>
+					</li>
+					<li class="flex justify-between">
+						<span>JPY/VND</span><span>165.45</span>
+					</li>
+					<li class="flex justify-between">
+						<span>KRW/VND</span><span>18.30</span>
+					</li>
+					<li class="flex justify-between">
+						<span>CNY/VND</span><span>3,330</span>
+					</li>
+					<li class="flex justify-between">
+						<span>SGD/VND</span><span>17,600</span>
+					</li>
+					<li class="flex justify-between">
+						<span>CHF/VND</span><span>27,500</span>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Transactions List -->
+			<div class="space-y-4">
+				<h2 class="text-lg font-semibold">Recent Transactions</h2>
+
+				<!-- Transaction 1 -->
+				<div
+					class="flex items-center justify-between rounded-lg border border-neutral-200 p-3 dark:border-neutral-700">
+					<div class="flex items-center space-x-3">
+						<div
+							class="flex h-10 w-10 items-center justify-center rounded-full bg-red-100 text-red-600 dark:bg-red-900/20">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-5 w-5">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+							</svg>
+						</div>
+						<div>
+							<p class="font-medium">Grocery Store</p>
+							<p class="text-xs text-neutral-500 dark:text-neutral-400">
+								Today, 10:30 AM
+							</p>
+						</div>
+					</div>
+					<div class="text-right">
+						<p class="font-medium text-red-600">-$42.50</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							Debit Card
+						</p>
+					</div>
+				</div>
+
+				<!-- Transaction 2 -->
+				<div
+					class="flex items-center justify-between rounded-lg border border-neutral-200 p-3 dark:border-neutral-700">
+					<div class="flex items-center space-x-3">
+						<div
+							class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-green-600 dark:bg-green-900/20">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-5 w-5">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 12h-15m0 0l6.75-6.75M4.5 12l6.75 6.75" />
+							</svg>
+						</div>
+						<div>
+							<p class="font-medium">Salary Deposit</p>
+							<p class="text-xs text-neutral-500 dark:text-neutral-400">
+								Yesterday, 9:00 AM
+							</p>
+						</div>
+					</div>
+					<div class="text-right">
+						<p class="font-medium text-green-600">+$2,450.00</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							Direct Deposit
+						</p>
+					</div>
+				</div>
+
+				<!-- Transaction 3 -->
+				<div
+					class="flex items-center justify-between rounded-lg border border-neutral-200 p-3 dark:border-neutral-700">
+					<div class="flex items-center space-x-3">
+						<div
+							class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/20">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-5 w-5">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+							</svg>
+						</div>
+						<div>
+							<p class="font-medium">Netflix Subscription</p>
+							<p class="text-xs text-neutral-500 dark:text-neutral-400">
+								May 15, 2:00 PM
+							</p>
+						</div>
+					</div>
+					<div class="text-right">
+						<p class="font-medium text-red-600">-$14.99</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							Credit Card
+						</p>
+					</div>
+				</div>
+
+				<!-- Transaction 4 -->
+				<div
+					class="flex items-center justify-between rounded-lg border border-neutral-200 p-3 dark:border-neutral-700">
+					<div class="flex items-center space-x-3">
+						<div
+							class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/20">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="h-5 w-5">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3" />
+							</svg>
+						</div>
+						<div>
+							<p class="font-medium">Savings Transfer</p>
+							<p class="text-xs text-neutral-500 dark:text-neutral-400">
+								May 14, 4:30 PM
+							</p>
+						</div>
+					</div>
+					<div class="text-right">
+						<p class="font-medium text-green-600">+$200.00</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							Bank Transfer
+						</p>
+					</div>
+				</div>
+
+				<!-- View All Button -->
+				<button
+					class="w-full rounded-lg bg-neutral-100 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700">
+					View All Transactions
+				</button>
+			</div>
+		</main>
+		<!-- Bottom menu -->
+		<nav
+			class="w-full border-t border-neutral-200 bg-white shadow dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-100/10">
+			<div class="flex items-center justify-around py-2">
+				<a
+					href="#"
+					class="flex flex-col items-center text-sm text-neutral-600 hover:text-blue-600 dark:text-neutral-400">
+					<svg
+						class="mb-1 h-6 w-6"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3 12l2-2m0 0l7-7 7 7m-9 2v6m0 0h6m-6 0H9m12 4H3" />
+					</svg>
+					Home
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center text-sm text-neutral-600 hover:text-blue-600 dark:text-neutral-400">
+					<svg
+						class="mb-1 h-6 w-6"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+					</svg>
+					Search
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center text-sm text-neutral-600 hover:text-blue-600 dark:text-neutral-400">
+					<svg
+						class="mb-1 h-6 w-6"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.797.678 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+					</svg>
+					Profile
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center text-sm text-neutral-600 hover:text-blue-600 dark:text-neutral-400">
+					<svg
+						class="mb-1 h-6 w-6"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+					</svg>
+					Alerts
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center text-sm text-neutral-600 hover:text-blue-600 dark:text-neutral-400">
+					<svg
+						class="mb-1 h-6 w-6"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+					</svg>
+					Settings
+				</a>
+			</div>
+		</nav>
+	</div>
+</div>

@@ -1,0 +1,83 @@
+<div
+	class="overflow-hidden rounded-lg border border-neutral-200 shadow dark:border-neutral-800 dark:shadow-neutral-100/10">
+	<div
+		class="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
+		<!-- Header -->
+		<nav class="bg-white shadow dark:bg-neutral-800">
+			<div
+				class="container mx-auto flex items-center justify-between px-8 py-4">
+				<h1 class="text-xl font-bold">My Blog</h1>
+				<div class="space-x-4 text-sm">
+					<a href="#" class="hover:underline">Home</a>
+					<a href="#" class="hover:underline">Blog</a>
+					<a href="#" class="hover:underline">Contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Cover Section -->
+		<section
+			class="relative h-64 w-full overflow-hidden bg-cover bg-center bg-no-repeat"
+			style="
+				background-image: url('https://source.unsplash.com/1600x400/?nature,blog');
+			">
+			<div
+				class="absolute inset-0 flex items-center justify-center bg-black/40">
+				<h2 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+					Welcome to My Blog
+				</h2>
+			</div>
+		</section>
+
+		<!-- Blog Post Content -->
+		<main class="container mx-auto px-8 py-16">
+			<article class="prose lg:prose-lg dark:prose-invert prose-neutral">
+				<h1 class="mb-4 text-4xl leading-tight font-extrabold tracking-tight">
+					Understanding Tailwind CSS: A Beginner's Guide
+				</h1>
+				<p class="mb-6 text-sm text-neutral-500 dark:text-neutral-400">
+					By <span class="font-medium">Jane Doe</span> · May 10, 2025 · 5 min
+					read
+				</p>
+				<div class="flex flex-col gap-y-4">
+					<p>
+						Tailwind CSS is a utility-first framework that allows developers to
+						build custom designs without ever leaving their HTML. Unlike
+						traditional CSS frameworks like Bootstrap, Tailwind doesn’t provide
+						pre-styled components. Instead, it provides low-level utility
+						classes that let you build completely custom designs with ease.
+					</p>
+					<h2 class="text-2xl font-semibold">Why Use Tailwind?</h2>
+					<ul>
+						<li>Speed up development with reusable utilities</li>
+						<li>No need to leave your HTML to style elements</li>
+						<li>Perfect for design systems and component libraries</li>
+					</ul>
+					<h2 class="text-2xl font-semibold">Getting Started</h2>
+					<p>To get started, install Tailwind via npm:</p>
+					<pre
+						class="overflow-x-auto rounded-lg bg-neutral-100 p-4 text-sm text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100"><code>npm install -D tailwindcss
+npx tailwindcss init</code></pre>
+					<p>Then add Tailwind to your CSS:</p>
+					<pre
+						class="overflow-x-auto rounded-lg bg-neutral-100 p-4 text-sm text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100"><code>@tailwind base;
+@tailwind components;
+@tailwind utilities;</code></pre>
+					<h2 class="text-2xl font-semibold">Conclusion</h2>
+					<p>
+						Tailwind CSS is a modern approach to styling your applications. It's
+						especially useful for developers who value customization, design
+						freedom, and consistency. Whether you're building a personal blog or
+						a complex dashboard, Tailwind gives you the power to do it all.
+					</p>
+				</div>
+			</article>
+		</main>
+
+		<!-- Footer -->
+		<footer
+			class="border-t border-neutral-200 bg-white px-8 py-4 text-center text-sm text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400">
+			© 2025 My Blog. All rights reserved.
+		</footer>
+	</div>
+</div>

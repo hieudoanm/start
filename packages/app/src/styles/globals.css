@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@plugin 'daisyui' {
+	themes: all;
+}
+
+.github-dark {
+	background-color: oklch(20.5% 0 0) !important;
+	text-wrap: wrap;
+}
+
+.scrollbar-none {
+	overflow: auto;
+
+	/* For WebKit (Chrome, Safari) */
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, and Opera */
+}

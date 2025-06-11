@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Footer renders correctly 1`] = `
+<div>
+  <footer
+    class="border-t border-neutral-800 shadow shadow-neutral-100/10"
+  >
+    <div
+      class="container mx-auto px-4 py-2 md:px-8 md:py-4"
+    >
+      <div
+        class="flex items-start justify-between"
+      >
+        <div
+          class="flex flex-col gap-1 md:flex-row"
+        >
+          <p>
+            © 
+            2026
+             
+            Start
+            .
+          </p>
+          <p>
+            All Rights Reserved.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-1 md:flex-row md:gap-4"
+        >
+          <a
+            class="text-right"
+            href="https://github.com"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            class="text-right"
+            href="https://x.com"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

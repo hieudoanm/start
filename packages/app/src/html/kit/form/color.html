@@ -1,0 +1,18 @@
+<div
+	class="flex w-full items-center overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
+	<!-- Read-only input showing hex color -->
+	<input
+		id="color-value"
+		type="text"
+		value="#000000"
+		class="grow bg-gray-100 px-3 py-2 text-sm text-gray-700"
+		readonly />
+	<!-- Custom color input -->
+	<label for="color" class="cursor-pointer">
+		<span
+			id="color-display"
+			class="block w-10"
+			style="background-color: #000000"></span>
+	</label>
+	<input id="color" type="color" class="sr-only" value="#000000" />
+</div>

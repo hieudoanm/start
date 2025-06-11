@@ -1,0 +1,46 @@
+<div
+	class="relative mx-auto w-full rounded-lg border border-neutral-200 dark:border-neutral-800">
+	<!-- Slides -->
+	<div class="relative overflow-hidden rounded-lg">
+		<input
+			type="radio"
+			name="carousel"
+			id="carousel-1"
+			class="peer hidden"
+			checked />
+		<input type="radio" name="carousel" id="carousel-2" class="peer hidden" />
+		<input type="radio" name="carousel" id="carousel-3" class="peer hidden" />
+
+		<div class="flex aspect-video w-full transition-all duration-500">
+			<!-- Slide 1 -->
+			<div
+				class="peer-checked:carousel-1:block flex hidden aspect-video w-full items-center justify-center bg-neutral-100 text-xl font-semibold text-neutral-900 dark:bg-neutral-800 dark:text-white">
+				Slide 1
+			</div>
+			<!-- Slide 2 -->
+			<div
+				class="peer-checked:carousel-2:block flex hidden aspect-video w-full items-center justify-center bg-neutral-200 text-xl font-semibold text-neutral-900 dark:bg-neutral-700 dark:text-white">
+				Slide 2
+			</div>
+			<!-- Slide 3 -->
+			<div
+				class="peer-checked:carousel-3:block flex hidden aspect-video w-full items-center justify-center bg-neutral-300 text-xl font-semibold text-neutral-900 dark:bg-neutral-600 dark:text-white">
+				Slide 3
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<div
+		class="absolute right-0 bottom-4 left-0 mx-auto mt-4 flex justify-center gap-2">
+		<label
+			for="carousel-1"
+			class="h-3 w-3 cursor-pointer rounded-full bg-neutral-400 dark:bg-neutral-600"></label>
+		<label
+			for="carousel-2"
+			class="h-3 w-3 cursor-pointer rounded-full bg-neutral-400 dark:bg-neutral-600"></label>
+		<label
+			for="carousel-3"
+			class="h-3 w-3 cursor-pointer rounded-full bg-neutral-400 dark:bg-neutral-600"></label>
+	</div>
+</div>
