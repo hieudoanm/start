@@ -5,7 +5,7 @@ description = "FastAPI Server Starter"
 readme = "README.md"
 requires-python = "==3.14.3"
 dependencies = [
-    "fastapi==0.129.0",
+    "fastapi==0.129.2",
     "gunicorn==25.1.0",
     "pydantic==2.12.5",
     "uvicorn==0.41.0",
