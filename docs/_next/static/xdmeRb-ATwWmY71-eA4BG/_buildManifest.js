@@ -21,7 +21,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/2451d5b09dcc016e.js"
   ],
   "/assets/icons": [
-    "static/chunks/00050d9f218fc7e1.js"
+    "static/chunks/60664c2872bd91f6.js"
   ],
   "/auth/password/forget": [
     "static/chunks/1c9b174ceaadd8c4.js"
@@ -36,13 +36,13 @@ self.__BUILD_MANIFEST = {
     "static/chunks/2ff94a717d427121.js"
   ],
   "/preview/html": [
-    "static/chunks/684e5bf0a1afe49b.js"
+    "static/chunks/587396f9f7bf8452.js"
   ],
   "/react/contexts": [
-    "static/chunks/159f0386e55e239a.js"
+    "static/chunks/470fdd2bfbba6856.js"
   ],
   "/react/hooks": [
-    "static/chunks/ce7192087a06ae3a.js"
+    "static/chunks/d65295fb653280a2.js"
   ],
   "/react/router": [
     "static/chunks/d87dd57ec3eaecc3.js"
@@ -54,22 +54,22 @@ self.__BUILD_MANIFEST = {
     "static/chunks/bd5630a01fe8a731.js"
   ],
   "/tools/utils": [
-    "static/chunks/8feddac1bbed60bc.js"
+    "static/chunks/fc552972c2e4185b.js"
   ],
   "/ui/block": [
-    "static/chunks/a427cc527a826907.js"
+    "static/chunks/5f8c43257198069f.js"
   ],
   "/ui/charts": [
     "static/chunks/9fa3b942e498326e.js"
   ],
   "/ui/kit": [
-    "static/chunks/9fe5438e22e60e5b.js"
+    "static/chunks/ec4fe9dc68c4e5f4.js"
   ],
   "/ui/templates": [
-    "static/chunks/84a7af519674ce2b.js"
+    "static/chunks/410022281779720e.js"
   ],
   "/ui/templates/[id]": [
-    "static/chunks/44f6e5b0e0b048ff.js"
+    "static/chunks/90dcb04fe657b23b.js"
   ],
   "/version": [
     "static/chunks/6227c5dc4e525000.js"
