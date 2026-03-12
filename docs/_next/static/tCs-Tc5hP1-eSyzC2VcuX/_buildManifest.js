@@ -24,16 +24,16 @@ self.__BUILD_MANIFEST = {
     "static/chunks/60664c2872bd91f6.js"
   ],
   "/auth/password/forget": [
-    "static/chunks/1c9b174ceaadd8c4.js"
+    "static/chunks/b5fdb1ac7e0b3bcb.js"
   ],
   "/auth/password/reset": [
-    "static/chunks/3646a89bbc903e97.js"
+    "static/chunks/ea097522671b1d3b.js"
   ],
   "/auth/sign-in": [
-    "static/chunks/64904161a54c4b83.js"
+    "static/chunks/cb4091e7eaa1b864.js"
   ],
   "/auth/sign-up": [
-    "static/chunks/2ff94a717d427121.js"
+    "static/chunks/ae9efd3336a45f0e.js"
   ],
   "/preview/html": [
     "static/chunks/587396f9f7bf8452.js"

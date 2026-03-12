@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AuthTemplate to match snapshot 1`] = `
+<div>
+  <div
+    class="flex h-screen w-screen flex-col"
+  >
+    <div
+      class="fixed top-0 right-0 bottom-0 left-0 -z-10 m-auto flex w-screen items-center justify-center bg-white dark:bg-neutral-900"
+    >
+      <div
+        class="aspect-square w-full max-w-xl bg-[radial-gradient(#ffe4ec_0,_transparent_72%)] dark:bg-[radial-gradient(#510424_0,_transparent_72%)]"
+      />
+    </div>
+    <nav
+      class="border-b border-neutral-800 shadow shadow-neutral-100/10"
+    >
+      <div
+        class="container mx-auto px-4 py-2 md:px-8 md:py-4"
+      >
+        <div
+          class="flex items-center justify-between gap-x-4"
+        >
+          <a
+            class="text-xl font-black"
+            href="/"
+          >
+            <span
+              class="bg-gradient-to-r from-red-800 via-purple-800 to-blue-800 bg-clip-text text-transparent"
+            >
+              Start
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="grow"
+    >
+      <div
+        class="flex h-full w-full w-screen items-center justify-center p-4 md:p-8"
+      >
+        <div
+          class="w-full max-w-xl rounded-2xl border border-neutral-800 bg-neutral-900/80 p-8 shadow shadow-neutral-100/10"
+        >
+          <div
+            class="flex flex-col gap-y-8"
+          >
+            <h1
+              class="text-center text-3xl font-black md:text-4xl"
+            >
+              <span
+                class="bg-gradient-to-r from-red-800 via-purple-800 to-blue-800 bg-clip-text text-transparent"
+              >
+                Start
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="border-t border-neutral-800 shadow shadow-neutral-100/10"
+    >
+      <div
+        class="container mx-auto px-4 py-2 md:px-8 md:py-4"
+      >
+        <div
+          class="flex items-start justify-between"
+        >
+          <div
+            class="flex flex-col gap-1 md:flex-row"
+          >
+            <p>
+              © 
+              2026
+               
+              Start
+              .
+            </p>
+            <p>
+              All Rights Reserved.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-1 md:flex-row md:gap-4"
+          >
+            <a
+              class="text-right"
+              href="https://github.com"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            <a
+              class="text-right"
+              href="https://x.com"
+              target="_blank"
+            >
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
