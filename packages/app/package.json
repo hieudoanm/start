@@ -29,7 +29,7 @@
 		"dev": "next dev --turbopack",
 		"dev:tauri": "tauri dev",
 		"prebuild": "pnpm prisma:generate && rimraf .next ../../docs",
-		"build": "next build",
+		"build": "next build --turbopack",
 		"postbuild": "touch ../../docs/.nojekyll",
 		"build:tauri": "tauri build",
 		"build:android": "rimraf mobile/android && cap add android",
