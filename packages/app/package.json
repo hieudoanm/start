@@ -26,7 +26,7 @@
 		"prelint": "pnpm prisma:generate",
 		"lint": "eslint . --fix",
 		"predev": "pnpm prisma:generate && kill-port 3000",
-		"dev": "next dev",
+		"dev": "next dev --turbopack",
 		"dev:tauri": "tauri dev",
 		"prebuild": "pnpm prisma:generate && rimraf .next ../../docs",
 		"build": "next build",
