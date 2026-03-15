@@ -5,8 +5,8 @@ import { authPassword } from './auth/password.router';
 import { authUser } from './auth/user.router';
 
 export const appRouter = router({
-	auth: { user: authUser, password: authPassword },
-	app: { user, gemini },
+  auth: { user: authUser, password: authPassword },
+  app: { user, gemini },
 });
 
 // export type definition of API

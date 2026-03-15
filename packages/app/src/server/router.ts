@@ -11,15 +11,15 @@ export const router = t.router;
 export const publicProcedure = t.procedure;
 
 export const privateMiddleware = t.middleware(({ ctx, next }) => {
-	if (!ctx.email) {
-		throw new TRPCError({ code: 'UNAUTHORIZED' });
-	}
-	return next({
-		ctx: {
-			// Optionally, pass email along
-			email: ctx.email,
-		},
-	});
+  if (!ctx.email) {
+    throw new TRPCError({ code: 'UNAUTHORIZED' });
+  }
+  return next({
+    ctx: {
+      // Optionally, pass email along
+      email: ctx.email,
+    },
+  });
 });
 
 export const privateProcedure = t.procedure.use(privateMiddleware);
