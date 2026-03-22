@@ -7,13 +7,13 @@ run:
 	go run .
 
 build:
-	go build -o bin/$(APP)
+	go build $(LDFLAGS) -o bin/$(APP)
 
 build-linux:
-	GOOS=linux GOARCH=amd64 go build -o bin/$(APP)-linux
+	GOOS=linux GOARCH=amd64 go build $(LDFLAGS) -o bin/$(APP)-linux
 
 build-mac:
-	GOOS=darwin GOARCH=arm64 go build -o bin/$(APP)-mac
+	GOOS=darwin GOARCH=arm64 go build $(LDFLAGS) -o bin/$(APP)-mac
 
 test:
 	go test $(PKG)
