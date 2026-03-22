@@ -11,9 +11,7 @@
 ## 📦 Installation
 
 ```bash
-curl -fsSL https://github.com/hieudoanm/start/raw/refs/heads/master/packages/cli/bin/start -o start
-chmod +x start
-sudo mv start /usr/local/bin/
+curl -fsSL https://raw.githubusercontent.com/hieudoanm/start/master/packages/cli/scripts/install.sh | bash
 ```
 
 ## 🚀 Usage
