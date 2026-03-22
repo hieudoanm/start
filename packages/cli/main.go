@@ -3,7 +3,7 @@ Copyright © 2026 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
-import "start-cli/cmd"
+import "github.com/hieudoanm/start/src/cmd"
 
 func main() {
 	cmd.Execute()

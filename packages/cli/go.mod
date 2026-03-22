@@ -1,4 +1,4 @@
-module start-cli
+module github.com/hieudoanm/start
 
 go 1.26.1
 
