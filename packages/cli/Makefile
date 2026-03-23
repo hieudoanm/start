@@ -1,22 +1,30 @@
-APP := start
-PKG := ./...
+.PHONY: lint format build install all
 
-.PHONY: run build test clean
+BIN_DIR := bin
+BIN_NAME := start
+SRC := ./main.go
 
-run:
-	go run .
+VERSION := $(shell date +%Y.%m.%d.%H.%M.%S)
+LDFLAGS := -ldflags="-X 'github.com/hieudoanm/start/src/cmd.Version=$(VERSION)'"
 
-build:
-	go build $(LDFLAGS) -o bin/$(APP)
 
-build-linux:
-	GOOS=linux GOARCH=amd64 go build $(LDFLAGS) -o bin/$(APP)-linux
+## Commands
+lint:
+	go vet ./...
 
-build-mac:
-	GOOS=darwin GOARCH=arm64 go build $(LDFLAGS) -o bin/$(APP)-mac
+format:
+	go fmt ./...
 
-test:
-	go test $(PKG)
+## Build binary into ./bin
+build: format lint
+	@mkdir -p $(BIN_DIR)
+	go build $(LDFLAGS) -o $(BIN_DIR)/$(BIN_NAME) $(SRC)
 
-clean:
-	rm -rf bin
+## Install binary into ~/bin
+install: build
+	@mkdir -p $(HOME)/bin
+	cp $(BIN_DIR)/$(BIN_NAME) $(HOME)/bin/
+	chmod +x $(HOME)/bin/$(BIN_NAME)
+	@echo "Installed to $$HOME/bin"
+	@echo "Make sure $$HOME/bin is in your PATH:"
+	@echo '  export PATH="$$HOME/bin:$$PATH"'
