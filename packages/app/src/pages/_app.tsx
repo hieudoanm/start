@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <HeadTemplate title="Start" />
+      <HeadTemplate basic={{ title: 'Start' }} />
       <div className={`${geistSans.className} ${geistMono.className}`}>
         <UserProvider>
           <Component {...pageProps} />
