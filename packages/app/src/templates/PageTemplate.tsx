@@ -26,16 +26,6 @@ export const NAVBAR_LINKS: {
   },
   {
     group: 'assets',
-    id: 'assets-emojis',
-    emoji: '😄',
-    href: '/assets/emojis',
-    text: 'Emojis',
-    full: 'Emojis',
-    description:
-      'A large collection of emojis to enhance user interfaces, chats, and messaging applications with expressive icons.',
-  },
-  {
-    group: 'assets',
     id: 'assets-fonts',
     emoji: '🔤',
     href: '/assets/fonts',

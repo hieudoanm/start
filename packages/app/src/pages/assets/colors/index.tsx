@@ -10,7 +10,7 @@ const ColorsPage = () => {
       id="assets-colors"
       emoji=""
       title="atomic/colors"
-      description="is an easy-to-access, curated collection of diverse emojis to enhance user experience and add personality to your interfaces.">
+      description="is an easy-to-access, curated collection of diverse colors to enhance user experience and add personality to your interfaces.">
       <section className="py-8 md:py-16">
         <div className="container mx-auto px-8">
           <div className="mx-auto flex w-full max-w-2xl flex-col gap-y-4 md:gap-y-8">
