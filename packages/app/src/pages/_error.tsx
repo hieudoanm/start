@@ -1,20 +1,23 @@
-import { Button } from '@start/components/common/Button';
-import Link from 'next/link';
+import { ErrorTemplate } from '@start/templates/ErrorTemplate';
+import { NextPage } from 'next';
 
-const ErrorPage = () => {
+const messages = [
+  'Something went wrong on our end.',
+  'An unexpected error occurred.',
+  'We ran into a server issue.',
+  'The server had trouble processing your request.',
+  'This wasn’t supposed to happen.',
+];
+
+const ErrorPage: NextPage = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-white px-4 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
-      <div className="text-center">
-        <h1 className="text-9xl font-extrabold">404</h1>
-        <p className="mt-4 text-2xl font-semibold">Page Not Found</p>
-        <p className="mt-2">
-          Sorry, the page you&apos;re looking for doesn&apos;t exist.
-        </p>
-        <Link href="/">
-          <Button>Go Home</Button>
-        </Link>
-      </div>
-    </div>
+    <ErrorTemplate
+      error={{
+        code: 500,
+        message: 'Internal server error',
+      }}
+      messages={messages}
+    />
   );
 };
 

@@ -3,37 +3,80 @@
 exports[`ErrorTemplate to match snapshot 1`] = `
 <div>
   <div
-    class="fixed top-0 right-0 bottom-0 left-0 -z-10 m-auto flex w-screen items-center justify-center bg-white dark:bg-neutral-900"
+    class="bg-base-100 text-base-content relative flex min-h-screen items-center justify-center px-12 py-24"
+    data-theme="luxury"
   >
     <div
-      class="aspect-square w-full max-w-xl bg-[radial-gradient(#ffe4ec_0,_transparent_72%)] dark:bg-[radial-gradient(#510424_0,_transparent_72%)]"
+      class="bg-primary/5 pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
     />
-  </div>
-  <div
-    class="flex min-h-screen items-center justify-center px-4 text-neutral-900 dark:text-neutral-100"
-  >
     <div
-      class="flex flex-col gap-y-4 text-center"
+      class="relative mx-auto w-full max-w-xl text-center"
     >
-      <h1
-        class="text-9xl font-extrabold"
-      />
-      <div
-        class="flex flex-col gap-y-2"
+      <p
+        class="text-primary mb-7 text-xs tracking-[0.2em] uppercase"
       >
-        <p
-          class="text-2xl font-semibold"
-        />
-        <p />
+        Page not found
+      </p>
+      <h1
+        class="mb-6 font-serif text-[9rem] leading-none font-black tracking-tight"
+      >
+        <span
+          class="text-primary"
+        >
+          404
+        </span>
+      </h1>
+      <h2
+        class="mb-4 font-serif text-3xl leading-snug font-bold"
+      />
+      <p
+        class="text-base-content/30 mb-10 font-mono text-xs break-all"
+      >
+        /
+      </p>
+      <div
+        class="mb-10 flex flex-wrap justify-center gap-3"
+      >
         <a
+          class="btn btn-primary"
           href="/"
         >
-          <button
-            class="cursor-pointer rounded-lg bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 px-5 py-3 font-semibold text-neutral-100 dark:border-neutral-800 dark:from-red-700 dark:via-purple-700 dark:to-blue-700"
-          >
-            🏠 
-          </button>
+          Go home
         </a>
+        <button
+          class="btn btn-ghost"
+        >
+          Go back
+        </button>
+      </div>
+      <div
+        class="flex flex-wrap justify-center gap-3"
+      >
+        <span
+          class="badge badge-ghost border-base-300 text-base-content/40 gap-1.5 border"
+        >
+          <kbd
+            class="kbd kbd-xs"
+          >
+            ←
+          </kbd>
+          <span>
+            or
+          </span>
+          <kbd
+            class="kbd kbd-xs"
+          >
+            Backspace
+          </kbd>
+          <span>
+            to go back
+          </span>
+        </span>
+        <span
+          class="badge badge-warning text-warning-content"
+        >
+          404
+        </span>
       </div>
     </div>
   </div>

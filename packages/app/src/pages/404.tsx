@@ -1,12 +1,22 @@
 import { ErrorTemplate } from '@start/templates/ErrorTemplate';
+import { NextPage } from 'next';
 
-const NotFoundPage = () => {
+const messages = [
+  'This page seems to have wandered off.',
+  'Nothing to see here — just a missing page.',
+  'You’ve reached a dead end.',
+  'Looks like this link is broken.',
+  'We couldn’t find what you were looking for.',
+];
+
+const NotFoundPage: NextPage = () => {
   return (
     <ErrorTemplate
-      code="404"
-      title="Page Not Found"
-      message="Sorry, the page you're looking for doesn't exist."
-      action="Go Home"
+      error={{
+        code: 404,
+        message: 'Page not found',
+      }}
+      messages={messages}
     />
   );
 };

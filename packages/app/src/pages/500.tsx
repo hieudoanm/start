@@ -1,12 +1,22 @@
 import { ErrorTemplate } from '@start/templates/ErrorTemplate';
+import { NextPage } from 'next';
 
-const InternalServerErrorPage = () => {
+const messages = [
+  'Something went wrong on our end.',
+  'An unexpected error occurred.',
+  'We ran into a server issue.',
+  'The server had trouble processing your request.',
+  'This wasn’t supposed to happen.',
+];
+
+const InternalServerErrorPage: NextPage = () => {
   return (
     <ErrorTemplate
-      code="500"
-      title="Internal Server Error"
-      message="Something went wrong on our end. Please try again later."
-      action="Go Home"
+      error={{
+        code: 500,
+        message: 'Internal server error',
+      }}
+      messages={messages}
     />
   );
 };

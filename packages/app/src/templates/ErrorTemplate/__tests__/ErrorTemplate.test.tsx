@@ -4,7 +4,7 @@ import { ErrorTemplate } from '../ErrorTemplate';
 describe('ErrorTemplate', () => {
   it('to match snapshot', () => {
     const { container } = render(
-      <ErrorTemplate code={''} title={''} message={''} action={''} />
+      <ErrorTemplate error={{ code: 404, message: '' }} messages={[]} />
     );
     expect(container).toMatchSnapshot();
   });
