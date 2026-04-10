@@ -11,9 +11,9 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "github.com/hieudoanm/start",
+	Use:   "start",
 	Short: "Start CLI application (templates tools)",
-	Long:  `The start CLI application is a comprehensive backend utility belonging to the templates suite of tools.
+	Long: `The start CLI application is a comprehensive backend utility belonging to the templates suite of tools.
 
 Use this root executable to manage configuring, running, and interacting with all start-related operations securely and efficiently from your terminal.`,
 	// Uncomment the following line if your bare application
