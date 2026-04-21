@@ -66,8 +66,8 @@ importers:
         specifier: 19.2.5
         version: 19.2.5(react@19.2.5)
       resend:
-        specifier: 6.12.1
-        version: 6.12.1(@react-email/render@1.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
+        specifier: 6.12.2
+        version: 6.12.2(@react-email/render@1.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       shiki:
         specifier: 4.0.2
         version: 4.0.2
@@ -4092,8 +4092,8 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
 
-  resend@6.12.1:
-    resolution: {integrity: sha512-GDcQ1ccMgoqfEtRnGWAnACtQzAxbNZzgygiDrXeDRhCZb9DWCz+i7+omCHf75afmDWztqbr59HIXqPIM7oCkdQ==}
+  resend@6.12.2:
+    resolution: {integrity: sha512-xwgmU4b0OqoabJsIoK/x0Whk0Fcs3bpbK4i/DEWPiE5hYJHyHl0TbB6QbI3gIr+bLdLUJ1GYm/fe41aVFuHXgw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@react-email/render': '*'
@@ -9364,7 +9364,7 @@ snapshots:
 
   require-from-string@2.0.2: {}
 
-  resend@6.12.1(@react-email/render@1.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)):
+  resend@6.12.2(@react-email/render@1.1.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)):
     dependencies:
       postal-mime: 2.7.4
       svix: 1.90.0
