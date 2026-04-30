@@ -58,7 +58,7 @@
     "react-dom": "19.2.5",
     "resend": "6.12.2",
     "shiki": "4.0.2",
-    "zod": "4.3.6"
+    "zod": "4.4.0"
   },
   "devDependencies": {
     "@capacitor/cli": "8.3.1",
